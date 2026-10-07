@@ -1,20 +1,32 @@
 # IPL Data Analysis Project
 
-This project contains exploratory data analysis (EDA) of the IPL dataset (2008-2020).
+Exploratory Data Analysis (EDA) of IPL cricket data (2008-2020) using Python.
 
 ## Contents
-- Data cleaning and preprocessing
-- Visualization of batting, bowling statistics
-- Insights on top players and match trends
+- Data cleaning and missing-value checks
+- Season-wise match trends
+- Team performance (most wins)
+- Toss analysis (does winning the toss help win the match?)
+- Top run scorers and top wicket takers
+- Scoring pattern by over
+- Venue analysis (highest average-scoring grounds)
+- Correlation heatmap
 
-## How to Run
+## How to run
 1. Install dependencies:
-2. Run the Python scripts or Jupyter notebooks.
+
+pip install pandas numpy matplotlib seaborn
+
+2. Download the dataset (see below) and place `matches.csv` and `deliveries.csv`
+   in this folder.
+3. Run:
+
+python ipl_eda.py
+
+   Charts are saved to an `eda_output/` folder; summary stats print to the console.
 
 ## Dataset
-The dataset is sourced from Kaggle [IPL Complete Dataset](https://www.kaggle.com/patrickb1912/ipl-complete-dataset-20082020).
+Sourced from Kaggle: [IPL Complete Dataset (2008-2020)](https://www.kaggle.com/patrickb1912/ipl-complete-dataset-20082020)
 
 ## Author
-zain
-
-
+Mohammad Zain
